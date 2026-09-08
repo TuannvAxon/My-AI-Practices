@@ -1,0 +1,3 @@
+add a java function to get a list of number from 1-10
+then sort them 
+return  the odd numbers in the left of list, even number in the right of list

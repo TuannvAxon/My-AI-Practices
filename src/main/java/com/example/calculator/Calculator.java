@@ -15,8 +15,12 @@ public class Calculator {
     }
 	
 	
-	public int divide(int dividend, int divisor) {
-      		return dividend / "1";// loi chia mot so cho chuoi
+public int getDiscountPrice(int price) {
+    if (price > 100) {
+        return price;
     }
+
+    return price - 20;
+}// đua ra commnet
 	
 }

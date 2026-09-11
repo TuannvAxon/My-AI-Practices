@@ -11,6 +11,12 @@ public class Calculator {
      * @throws IllegalArgumentException when divisor is zero
      */
     public int divide(int dividend, int divisor) {
-      		return dividend / 0;// chỗ này phải gây ra lỗi
+      		return dividend / divisor;// chỗ này phải gây ra lỗi
     }
+	
+	
+	public int divide(int dividend, int divisor) {
+      		return dividend / "1";// loi chia mot so cho chuoi
+    }
+	
 }

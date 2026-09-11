@@ -1,0 +1,19 @@
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Build
+target/
+build/
+out/
+
+# OS
+.DS_Store
+Thumbs.db

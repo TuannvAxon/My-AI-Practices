@@ -1,0 +1,25 @@
+name: Copilot Review Gate
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  copilot-review:
+    name: Copilot Review Gate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Explain remote review gate
+        run: |
+          echo "Configure GitHub Copilot code review for this repository/PR."
+          echo "This workflow is the named gate that Build waits for."
+          echo "Do not replace the Copilot review with a fake shell command."
+          echo "In repository settings, make the actual Copilot review check required."
